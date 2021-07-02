@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Nav-Tab</title>
+</head>
+<body>
+    <div class="container" style="margin-top: 30px;">
+    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" 
+          type="button" role="tab" aria-controls="home" aria-selected="true">Inicio</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" 
+          type="button" role="tab" aria-controls="profile" aria-selected="false">Mensajes</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" 
+          type="button" role="tab" aria-controls="contact" aria-selected="false">Configuracion</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="perfil-tab" data-bs-toggle="modal" data-bs-target="#exampleModal" 
+            type="button" role="tab" aria-controls="perfil" aria-selected="false">Perfil</button>
+              <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <br><img src="../img/user.png"><br><br>
+                    <h4>Usuario</h4>
+                    <input type="text" placeholder="Escribe tu usuario aqui"><br><br>
+                    <h4>Contraseña</h4>
+                    <input type="password" placeholder="Escribe tu contraseña aqui"><br><br>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                    </div></div></div></div></li></ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <br><div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-center"><img src="../img/Yanfei.jpg" 
+                      class="d-block w-50" border="2px" style="border-color: lightgray;"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center"><img src="../img/ChiiLogo.png" 
+                      class="d-block w-50" border="2px" style="border-color: lightgray;"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center"><img src="../img/fubuki3.jpg" 
+                      class="d-block w-50" border="2px" style="border-color: lightgray;"></div>
+                  </div></div></div></div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <br><div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Mini Shark</button></h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>I see you're eyeballin' the Minishark.. You really don't want to know how it was made.
+                    </strong>— The Arms Dealer</div></div></div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Hair Style</button></h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>"Those highlights really bring out your eyes!"</strong>- The Stylist
+                    </div></div></div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Blood Moon</button></h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>"You can tell a Blood Moon is out when the sky turns red. There is something about it that causes monsters to swarm."
+                      </strong> - The Guide</div></div></div></div></div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="d-flex justify-content-center">
+                <div class="card" style="width: 18rem; margin-top: 20px;">
+                <img src="../img/Technoblade.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Technoblade</h5>
+                  <p class="card-text">When you need someone to fix your sink, you call a plumber. 
+                      When you need someone to fix your electricity, you call an electrician. 
+                      And when you need someone to OVERTHROW A BRUTAL TYRANT, YOU CALL AN ANARCHIST!</p></div>
+                </div></div></div></div></div></div>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
